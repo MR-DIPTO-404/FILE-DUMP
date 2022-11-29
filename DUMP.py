@@ -3,7 +3,7 @@ os.system('git pull')
 
 os.system('clear')
 
-print('  ENJOY UNLIMITED FILE DUMP & SEPARATE FILE TOOLS 🔥')
+print('     \033[1;32mENJOY UNLIMITED FILE DUMP & SEPARATE FILE TOOLS 🔥')
 
 time.sleep(5)
 
