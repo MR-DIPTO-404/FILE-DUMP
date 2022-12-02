@@ -192,8 +192,8 @@ def main():
 	os.system("clear")
 	print(logo)
 	try:
-		fbcokis = open('data/cokie.txt','r').read()
-		token = open('data/token.txt','r').read()
+		fbcokis = open('sdcard/data/cokie.txt','r').read()
+		token = open('sdcard/data/token.txt','r').read()
 		ftoken = requests.get("https://business.facebook.com/business_locations", headers=head, cookies = {"cookie":fbcokis}).text
 		eaag = re.search("(EAAG\w+)",str(ftoken))
 	except:
@@ -201,8 +201,8 @@ def main():
 		login()
 	global totaldmp,count
 	try:
-		token=open('data/token.txt','r').read()
-		fbcokis =open('data/cokie.txt','r').read()
+		token=open('sdcard/data/token.txt','r').read()
+		fbcokis =open('sdcard/data/cokie.txt','r').read()
 	except (FileNotFoundError):
 		print(f"{H}[{M}×{H}] {M}Login Not Found")
 		time.sleep(1)
